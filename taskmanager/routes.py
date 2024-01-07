@@ -21,7 +21,7 @@ def add_category():
         db.session.add(category)
         db.session.commit()
         return redirect(url_for("categories"))
-    return render_template("add_category.html") 
+    return render_template("add_category.html")
 
 
 @app.route("/edit_category/<int:category_id>", methods=["GET", "POST"])
@@ -56,4 +56,4 @@ def add_task():
         db.session.add(task)
         db.session.commit()
         return redirect(url_for("home"))
-    return render_template("add_task.html", categories=categories) 
+    return render_template("add_task.html", categories=categories)

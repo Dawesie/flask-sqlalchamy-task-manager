@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var sidenav = document.querySelectorAll('.sidenav');
+    // sidenav initialization
+    let sidenav = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sidenav);
 
     // datepicker initialization
